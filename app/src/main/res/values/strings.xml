@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">GraphicalPassApp</string>
     <!-- Main Activity Page -->
+    <string name="passLength">Select your password length:</string>
     <string name="loginButton">Login</string>
     <string name="setupButton">Setup Password</string>
+
+    <!-- Spinner -->
+    <string-array name="passwordLength">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!-- Login Screen 0 -->
+    <string name="selectLoginImage1">Select your first image:</string>
+
+    <!-- Setup Screen 0 -->
+    <string name="selectSetupImage1">Select your first image:</string>
 </resources>

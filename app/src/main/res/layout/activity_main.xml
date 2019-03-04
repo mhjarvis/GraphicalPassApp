@@ -8,20 +8,30 @@
     android:orientation="vertical"
     tools:context="hfad.com.graphicalpassapp.MainActivity">
 
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="" />
-
     <Button
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/loginButton"
+        android:onClick="getLogin" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/passLength" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/color"
+        android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="@string/loginButton" />
-        <!--android:onClick="getLogin" /> -->
+        android:entries="@array/passwordLength" />
 
     <Button
         android:id="@+id/setupButton"
@@ -29,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="@string/setupButton" />
-        <!-- android:onClick="setLogin" /> -->
+        android:text="@string/setupButton"
+        android:onClick="setLogin" />
 
 </LinearLayout>
