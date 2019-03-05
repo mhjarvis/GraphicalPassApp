@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setLogin(View view){
         Intent goToSetupScreen0 = new Intent(this, passwordSetup0.class);
+
         startActivity(goToSetupScreen0);
     }
 

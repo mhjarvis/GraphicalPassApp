@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".passwordSetup0"></activity>
+        <activity android:name=".passwordSetup1"></activity>
+        <activity android:name=".passwordLogin1" />
+        <activity android:name=".passwordSetup0" />
         <activity android:name=".passwordLogin0" />
         <activity android:name=".MainActivity">
             <intent-filter>
