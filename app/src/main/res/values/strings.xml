@@ -18,13 +18,28 @@
         <item>6</item>
     </string-array>
 
-    <!-- Login Screen 0 -->
+    <!-- Login Screen 1 -->
     <string name="selectLoginImage1">Select your first image:</string>
-
+    <string name="loginButton1">Next</string>
+    <!-- Login Screen 2 -->
+    <string name="selectLoginImage2">Select your second image:</string>
+    <string name="loginButton2">Next</string>
+    <!-- Login Screen 3 -->
+    <string name="selectLoginImage3">Select your third image:</string>
+    <string name="loginButton3">Next</string>
+    <!-- Login Screen 4 -->
+    <string name="selectLoginImage4">Select your fourth image:</string>
+    <string name="loginButton4">Next</string>
     <!-- Instructions to select an image -->
     <string name="selectImage">Select the first image in your password:</string>
 
     <!-- Setup Screen 0 -->
     <string name="selectSetupImage1">Select your first image:</string>
+
+    <!-- Setup Screen 0 -->
+
+    <!-- Setup Screen 0 -->
+
+    <!-- Setup Screen 0 -->
 
 </resources>

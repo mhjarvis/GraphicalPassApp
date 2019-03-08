@@ -14,10 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".passwordSetup1"></activity>
-        <activity android:name=".passwordLogin1" />
-        <activity android:name=".passwordSetup0" />
-        <activity android:name=".passwordLogin0" />
+        <activity android:name=".setup4"></activity>
+        <activity android:name=".setup3" />
+        <activity android:name=".login4" />
+        <activity android:name=".login3" />
+        <activity android:name=".setup2" />
+        <activity android:name=".login2" />
+        <activity android:name=".setup1" />
+        <activity android:name=".login1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
