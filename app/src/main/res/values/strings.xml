@@ -30,16 +30,23 @@
     <!-- Login Screen 4 -->
     <string name="selectLoginImage4">Select your fourth image:</string>
     <string name="loginButton4">Next</string>
+
+
     <!-- Instructions to select an image -->
     <string name="selectImage">Select the first image in your password:</string>
 
-    <!-- Setup Screen 0 -->
+
+    <!-- Password Setup -->
+    <!-- Setup Screen 1 -->
     <string name="selectSetupImage1">Select your first image:</string>
-
-    <!-- Setup Screen 0 -->
-
-    <!-- Setup Screen 0 -->
-
-    <!-- Setup Screen 0 -->
-
+    <string name="setupButton1">Next</string>
+    <!-- Setup Screen 2 -->
+    <string name="selectSetupImage2">Select your second image:</string>
+    <string name="setupButton2">Next</string>
+    <!-- Setup Screen 3 -->
+    <string name="selectSetupImage3">Select your third image:</string>
+    <string name="setupButton3">Next</string>
+    <!-- Setup Screen 4 -->
+    <string name="selectSetupImage4">Select your fourth image:</string>
+    <string name="setupButton4">Next</string>
 </resources>

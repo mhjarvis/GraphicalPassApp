@@ -2,6 +2,9 @@ package hfad.com.graphicalpassapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.content.Intent;
+import android.widget.TextView;
 
 public class setup4 extends Activity {
 
