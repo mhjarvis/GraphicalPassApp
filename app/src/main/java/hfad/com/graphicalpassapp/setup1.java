@@ -22,7 +22,7 @@ public class setup1 extends Activity {
     }
 
     public void getSetupPage_2(View view){
-        Intent goToSetupScreen2 = new Intent(this, login2.class);
+        Intent goToSetupScreen2 = new Intent(this, setup2.class);
         startActivity(goToSetupScreen2);
     }
 }

@@ -16,7 +16,7 @@ public class setup3 extends Activity {
 
 
     public void getSetupPage_4(View view){
-        Intent goToSetupScreen4 = new Intent(this, login4.class);
+        Intent goToSetupScreen4 = new Intent(this, setup4.class);
         startActivity(goToSetupScreen4);
     }
 }

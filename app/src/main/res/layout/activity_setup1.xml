@@ -1,89 +1,4 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".setup1">
-
-    <TextView
-        android:id="@+id/selectImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:text="@string/selectSetupImage1" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientaion="horizontal">
-
-
-
-        <ImageView
-            android:id="@+id/imageBee"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout-weight="1"
-            android:src="@drawable/bee"
-            />
-        <ImageView
-            android:id="@+id/imageEagle"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/eagle"
-            />
-
-
-
-
-
-
-
-
-    </FrameLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -117,15 +32,13 @@
         android:onClick="getSetupPage_2"
         android:text="@string/setupButton1" />
 
-    Display username from main_activity
-    <ImageView
+
+    <!--<ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/suburbs1"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp" />-->
 
 
 </LinearLayout>
-
--->
