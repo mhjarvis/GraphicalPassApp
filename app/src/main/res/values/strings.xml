@@ -49,4 +49,6 @@
     <!-- Setup Screen 4 -->
     <string name="selectSetupImage4">Select your fourth image:</string>
     <string name="setupButton4">Next</string>
+
+    <string name="image_4_text">Select your final image:</string>
 </resources>

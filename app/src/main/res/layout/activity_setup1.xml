@@ -2,11 +2,11 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/batman"
     tools:context=".setup1">
 
     <TextView
@@ -19,8 +19,104 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:text="@string/selectSetupImage1"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:text="@string/selectSetupImage1" />
+        android:typeface="monospace"
+        tools:paddingBottom="20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bee" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/purpleflower" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/eagle" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/glasses" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/redshoes" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/eagle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/purpleflower" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bee" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/setupButton1"
