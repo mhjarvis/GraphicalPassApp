@@ -14,6 +14,7 @@ public class login1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login1);
+
         Intent intent = getIntent();
         String messageText = intent.getStringExtra(EXTRA_MESSAGE);
         TextView messageView = findViewById(R.id.loginText);
@@ -22,7 +23,7 @@ public class login1 extends Activity {
 
     // go to next set of images (2 of 4)
     public void getLoginPage_2(View view){
-        Intent goToLoginScreen1 = new Intent(this, login2.class);
-        startActivity(goToLoginScreen1);
+        Intent goToLoginScreen2 = new Intent(this, login2.class);
+        startActivity(goToLoginScreen2);
     }
 }

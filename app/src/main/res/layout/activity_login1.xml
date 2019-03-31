@@ -6,24 +6,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/batman"
     tools:context=".login1">
 
-
-    <!-- display login name from main_activity -->
     <TextView
-        android:id="@+id/loginText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/selectLoginImage1"/>
+        android:id="@+id/loginText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/selectImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:text="@string/selectImage" />
+        android:layout_gravity="center_horizontal"
+        android:text="@string/selectSetupImage1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/elephant"
+            android:cropToPadding="true"
+            android:src="@drawable/elephant" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/bunny"
+            android:cropToPadding="true"
+            android:src="@drawable/bunny" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/fish"
+            android:cropToPadding="true"
+            android:src="@drawable/fish" />
+
+        <ImageButton
+            android:id="@+id/imageButton04"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/zebra"
+            android:cropToPadding="true"
+            android:src="@drawable/zebra" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/lion"
+            android:cropToPadding="true"
+            android:src="@drawable/lion" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/owl"
+            android:cropToPadding="true"
+            android:src="@drawable/owl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/scorpion"
+            android:cropToPadding="true"
+            android:src="@drawable/scorpion" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/hippo"
+            android:cropToPadding="true"
+            android:src="@drawable/hippo" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/loginButton1"

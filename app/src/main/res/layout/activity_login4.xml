@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,76 +8,145 @@
     tools:context=".login4">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/loginText4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/image_4_text"
-        android:lineSpacingExtra="14sp"
-        android:text="@string/image_4_text"
-        android:textAlignment="center"
-        android:textColor="#bbb"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:typeface="normal"
+        android:layout_height="wrap_content" />
 
-        tools:text="string/image_4_text" />
+    <TextView
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/selectSetupImage4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/imageButton25"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/blocksabc"
+            android:cropToPadding="true"
+            android:src="@drawable/blocksabc" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/bee" />
+        <ImageButton
+            android:id="@+id/imageButton26"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/compass"
+            android:cropToPadding="true"
+            android:src="@drawable/compas" />
 
-        </FrameLayout>
     </LinearLayout>
-</LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/imageButton27"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/earth"
+            android:cropToPadding="true"
+            android:src="@drawable/earthdrawing" />
 
+        <ImageButton
+            android:id="@+id/imageButton28"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/grapes"
+            android:cropToPadding="true"
+            android:src="@drawable/grapes" />
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/imageButton29"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/spiderweb"
+            android:cropToPadding="true"
+            android:src="@drawable/spiderweb" />
 
+        <ImageButton
+            android:id="@+id/imageButton30"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/swirls"
+            android:cropToPadding="true"
+            android:src="@drawable/swirls" />
 
-<!--
+    </LinearLayout>
 
-<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/batman"
-    tools:context=".login4">
+        <ImageButton
+            android:id="@+id/imageButton31"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/branch"
+            android:cropToPadding="true"
+            android:src="@drawable/treebranch" />
 
+        <ImageButton
+            android:id="@+id/imageButton32"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/vulture"
+            android:cropToPadding="true"
+            android:src="@drawable/vulture"
+            android:layout_height="100dp" />
 
-    <TextView
-        android:id="@+id/selectImage4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:text="@string/selectLoginImage4" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/loginButton4"
+        android:id="@+id/setupButton5"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
+        android:layout_weight="1"
         android:background="#FFF"
-        android:text="@string/loginButton4" />
-</LinearLayout>
+        android:onClick="getStorage"
+        android:text="@string/setupButton3"
+        android:textSize="18sp" />
 
--->
+</LinearLayout>
