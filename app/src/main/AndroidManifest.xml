@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".setup4"></activity>
+        <activity android:name=".storage"></activity>
+        <activity android:name=".setup4" />
         <activity android:name=".setup3" />
         <activity android:name=".login4" />
         <activity android:name=".login3" />

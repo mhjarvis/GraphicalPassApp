@@ -1,171 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:orientation="vertical"
     tools:context=".setup4">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/loginText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/selectImage5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:text="Please select your final image:"/>
-
-    </LinearLayout>
+        android:layout_gravity="center_horizontal"
+        android:text="@string/selectSetupImage3"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
+            android:id="@+id/imageButton25"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
-            android:src="@drawable/glasses" />
+            android:background="@color/white"
+            android:contentDescription="@string/blocksabc"
+            android:cropToPadding="true"
+            android:src="@drawable/blocksabc" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
+            android:id="@+id/imageButton26"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/purpleflower"/>
+            android:background="@color/white"
+            android:contentDescription="@string/compass"
+            android:cropToPadding="true"
+            android:src="@drawable/compas" />
 
     </LinearLayout>
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="250dp"
-    android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
+            android:id="@+id/imageButton27"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
-            android:src="@drawable/redshoes" />
+            android:background="@color/white"
+            android:contentDescription="@string/earth"
+            android:cropToPadding="true"
+            android:src="@drawable/earthdrawing" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
+            android:id="@+id/imageButton28"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/eagle"/>
+            android:background="@color/white"
+            android:contentDescription="@string/grapes"
+            android:cropToPadding="true"
+            android:src="@drawable/grapes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton29"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/spiderweb"
+            android:cropToPadding="true"
+            android:src="@drawable/spiderweb" />
+
+        <ImageButton
+            android:id="@+id/imageButton30"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/swirls"
+            android:cropToPadding="true"
+            android:src="@drawable/swirls" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton31"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/branch"
+            android:cropToPadding="true"
+            android:src="@drawable/treebranch" />
+
+        <ImageButton
+            android:id="@+id/imageButton32"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/vulture"
+            android:cropToPadding="true"
+            android:src="@drawable/vulture" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/setupButton3"
+        android:id="@+id/setupButton4"
         android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="450dp"
-        android:background="#FFF"
-        android:text="@string/setupButton3" />
-
-
-</FrameLayout>
-
-<!-- <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#000"
-    tools:context=".setup4">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:text="Please select your final image:"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/bee" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/eagle"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/lizard" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/muffin"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/stork" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="180dp"
-                android:layout_weight="1"
-                android:src="@drawable/penandpad"/>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/setupButton3"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="#FFF"
-            android:text="@string/setupButton3"/>
-
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FFF"
+        android:onClick="getStorage"
+        android:text="@string/setupButton3"
+        android:textSize="18sp" />
     </LinearLayout>
-
-</FrameLayout> -->

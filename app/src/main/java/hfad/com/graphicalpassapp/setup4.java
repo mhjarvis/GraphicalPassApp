@@ -13,4 +13,9 @@ public class setup4 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup4);
     }
+
+    public void getStorage(View view){
+        Intent goToStorage = new Intent(this, storage.class);
+        startActivity(goToStorage);
+    }
 }

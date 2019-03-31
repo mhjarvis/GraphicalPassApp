@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,104 +16,130 @@
         android:id="@+id/selectImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="@string/selectSetupImage1"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:typeface="monospace"
-        tools:paddingBottom="20px" />
+        android:typeface="serif"
+        tools:paddingBottom="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/elephant"
+            android:cropToPadding="true"
+            android:src="@drawable/elephant" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/bunny"
+            android:cropToPadding="true"
+            android:src="@drawable/bunny" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/fish"
             android:cropToPadding="true"
-            android:src="@drawable/bee" />
+            android:src="@drawable/fish" />
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/zebra"
             android:cropToPadding="true"
-            android:src="@drawable/purpleflower" />
+            android:src="@drawable/zebra" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton5"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/lion"
             android:cropToPadding="true"
-            android:src="@drawable/eagle" />
+            android:src="@drawable/lion" />
 
         <ImageButton
             android:id="@+id/imageButton6"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/owl"
             android:cropToPadding="true"
-            android:src="@drawable/glasses" />
+            android:src="@drawable/owl" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
-            android:cropToPadding="true"
-            android:src="@drawable/redshoes" />
 
         <ImageButton
             android:id="@+id/imageButton7"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/scorpion"
             android:cropToPadding="true"
-            android:src="@drawable/eagle" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+            android:src="@drawable/scorpion" />
 
         <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:id="@+id/imageButton8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/hippo"
             android:cropToPadding="true"
-            android:src="@drawable/purpleflower" />
+            android:src="@drawable/hippo" />
 
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
-            android:cropToPadding="true"
-            android:src="@drawable/bee" />
     </LinearLayout>
 
     <Button

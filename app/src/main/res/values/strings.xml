@@ -51,4 +51,36 @@
     <string name="setupButton4">Next</string>
 
     <string name="image_4_text">Select your final image:</string>
+    <string name="pigcartoon">pigcartoon</string>
+    <string name="bearcartoon">bearcartoon</string>
+    <string name="monkeycartoon">monkeycartoon</string>
+    <string name="greenguycartoon">greenguycartoon</string>
+    <string name="ratcartoon">ratcartoon</string>
+    <string name="securitycartoon">securitycartoon</string>
+    <string name="thiefcartoon">thiefcartoon</string>
+    <string name="bunny">bunny</string>
+    <string name="elephant">Elephant</string>
+    <string name="hippo">hippo</string>
+    <string name="fish">fish</string>
+    <string name="scorpion">scorpion</string>
+    <string name="owl">owl</string>
+    <string name="lion">lion</string>
+    <string name="zebra">zebra</string>
+    <string name="blocksabc">blocksabc</string>
+    <string name="compass">compass</string>
+    <string name="earth">earth</string>
+    <string name="grapes">grapes</string>
+    <string name="spiderweb">spiderwebs</string>
+    <string name="swirls">swirls</string>
+    <string name="branch">branch</string>
+    <string name="vulture">vulture</string>
+    <string name="anchor">anchor</string>
+    <string name="bottle">bottle</string>
+    <string name="coffeecup">coffeecup</string>
+    <string name="gears">gears</string>
+    <string name="post">post</string>
+    <string name="key">key</string>
+    <string name="rocket">rocket</string>
+    <string name="tracks">tracks</string>
+    <string name="pigycartoon">piggycartoon</string>
 </resources>

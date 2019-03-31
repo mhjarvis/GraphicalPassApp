@@ -6,8 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/batman"
     tools:context=".setup2">
+
+    <TextView
+        android:id="@+id/loginText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/selectImage"
@@ -17,6 +21,123 @@
         android:textStyle="bold"
         android:text="@string/selectSetupImage2" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/bearcartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/bearcartoon" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/pigcartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/det" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/greenguycartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/greenguy" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/monkeycartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/moneycartoon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/pigycartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/pigy" />
+
+        <ImageButton
+            android:id="@+id/imageButton14"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/ratcartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/ratcartoon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/securitycartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/securityman" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/thiefcartoon"
+            android:cropToPadding="true"
+            android:src="@drawable/thief" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/setupButton2"
         android:layout_width="150dp"
@@ -24,7 +145,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#FFF"
-        android:text="@string/setupButton2"
-        android:onClick="getSetupPage_3" />
+        android:onClick="getSetupPage_3"
+        android:text="@string/setupButton2" />
 
 </LinearLayout>
