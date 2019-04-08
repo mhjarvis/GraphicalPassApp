@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context=".setup1">
 
     <TextView
@@ -27,6 +28,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+
         android:orientation="horizontal">
 
         <ImageButton
@@ -34,9 +36,10 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/elephant"
             android:cropToPadding="true"
+            android:onClick="useElephant"
             android:src="@drawable/elephant" />
 
         <ImageButton

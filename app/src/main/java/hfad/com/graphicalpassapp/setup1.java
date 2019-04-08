@@ -25,4 +25,9 @@ public class setup1 extends Activity {
         Intent goToSetupScreen2 = new Intent(this, setup2.class);
         startActivity(goToSetupScreen2);
     }
+
+    public void useElephant(View view){
+
+    }
+
 }
