@@ -38,7 +38,7 @@
             android:background="@color/white"
             android:contentDescription="@string/bearcartoon"
             android:cropToPadding="true"
-            android:onClick="useBunny"
+            android:onClick="useBear"
             android:src="@drawable/bearcartoon" />
 
         <ImageButton
@@ -49,6 +49,7 @@
             android:background="@color/white"
             android:contentDescription="@string/pigcartoon"
             android:cropToPadding="true"
+            android:onClick="useDetective"
             android:src="@drawable/det" />
 
     </LinearLayout>
@@ -68,6 +69,7 @@
             android:background="@color/white"
             android:contentDescription="@string/greenguycartoon"
             android:cropToPadding="true"
+            android:onClick="useGreenMonster"
             android:src="@drawable/greenguy" />
 
         <ImageButton
@@ -78,6 +80,7 @@
             android:background="@color/white"
             android:contentDescription="@string/monkeycartoon"
             android:cropToPadding="true"
+            android:onClick="useMonkey"
             android:src="@drawable/moneycartoon" />
 
     </LinearLayout>
@@ -97,6 +100,7 @@
             android:background="@color/white"
             android:contentDescription="@string/pigycartoon"
             android:cropToPadding="true"
+            android:onClick="usePig"
             android:src="@drawable/pigy" />
 
         <ImageButton
@@ -107,6 +111,7 @@
             android:background="@color/white"
             android:contentDescription="@string/ratcartoon"
             android:cropToPadding="true"
+            android:onClick="useRat"
             android:src="@drawable/ratcartoon" />
 
     </LinearLayout>
@@ -126,6 +131,7 @@
             android:background="@color/white"
             android:contentDescription="@string/securitycartoon"
             android:cropToPadding="true"
+            android:onClick="useSecurity"
             android:src="@drawable/securityman" />
 
         <ImageButton
@@ -136,14 +142,15 @@
             android:background="@color/white"
             android:contentDescription="@string/thiefcartoon"
             android:cropToPadding="true"
+            android:onClick="useThief"
             android:src="@drawable/thief" />
 
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@+id/textpage2"
-        android:id="@+id/textpage2"
+        android:text="@+id/textViewName2"
+        android:id="@+id/textViewName2"
         />
 
     <Button

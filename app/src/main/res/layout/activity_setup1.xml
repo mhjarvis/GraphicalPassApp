@@ -71,6 +71,7 @@
             android:background="@color/white"
             android:contentDescription="@string/fish"
             android:cropToPadding="true"
+            android:onClick="useFish"
             android:src="@drawable/fish" />
 
         <ImageButton
@@ -81,6 +82,7 @@
             android:background="@color/white"
             android:contentDescription="@string/zebra"
             android:cropToPadding="true"
+            android:onClick="useZebra"
             android:src="@drawable/zebra" />
 
     </LinearLayout>
@@ -100,6 +102,7 @@
             android:background="@color/white"
             android:contentDescription="@string/lion"
             android:cropToPadding="true"
+            android:onClick="useLion"
             android:src="@drawable/lion" />
 
         <ImageButton
@@ -110,6 +113,7 @@
             android:background="@color/white"
             android:contentDescription="@string/owl"
             android:cropToPadding="true"
+            android:onClick="useHawk"
             android:src="@drawable/owl" />
 
     </LinearLayout>
@@ -129,6 +133,7 @@
             android:background="@color/white"
             android:contentDescription="@string/scorpion"
             android:cropToPadding="true"
+            android:onClick="useScorpion"
             android:src="@drawable/scorpion" />
 
         <ImageButton
@@ -139,6 +144,7 @@
             android:background="@color/white"
             android:contentDescription="@string/hippo"
             android:cropToPadding="true"
+            android:onClick="useHippo"
             android:src="@drawable/hippo" />
 
     </LinearLayout>
@@ -158,8 +164,6 @@
         android:layout_height="wrap_content"
         android:text="@+id/textViewName"
         android:id="@+id/textViewName"
-        android:textColor="#000"
-
-        />
+        android:textColor="#000" />
 
 </LinearLayout>
