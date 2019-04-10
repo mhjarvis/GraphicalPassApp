@@ -8,6 +8,7 @@
     android:background="#FFF"
     tools:context=".setup1">
 
+
     <TextView
         android:id="@+id/loginText"
         android:layout_width="match_parent"
@@ -50,6 +51,7 @@
             android:background="@color/white"
             android:contentDescription="@string/bunny"
             android:cropToPadding="true"
+            android:onClick="useBunny"
             android:src="@drawable/bunny" />
 
     </LinearLayout>
@@ -150,5 +152,14 @@
         android:background="#FFF"
         android:onClick="getSetupPage_2"
         android:text="@string/setupButton1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/textViewName"
+        android:id="@+id/textViewName"
+        android:textColor="#000"
+
+        />
 
 </LinearLayout>

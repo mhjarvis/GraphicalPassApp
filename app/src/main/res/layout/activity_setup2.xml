@@ -38,6 +38,7 @@
             android:background="@color/white"
             android:contentDescription="@string/bearcartoon"
             android:cropToPadding="true"
+            android:onClick="useBunny"
             android:src="@drawable/bearcartoon" />
 
         <ImageButton
@@ -138,6 +139,12 @@
             android:src="@drawable/thief" />
 
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/textpage2"
+        android:id="@+id/textpage2"
+        />
 
     <Button
         android:id="@+id/setupButton2"
@@ -148,5 +155,6 @@
         android:background="#FFF"
         android:onClick="getSetupPage_3"
         android:text="@string/setupButton2" />
+
 
 </LinearLayout>

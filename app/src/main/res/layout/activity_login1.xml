@@ -37,6 +37,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/elephant"
+
             android:cropToPadding="true"
             android:src="@drawable/elephant" />
 

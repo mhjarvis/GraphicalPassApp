@@ -32,3 +32,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(goToSetupScreen0);
     }
 }
+
