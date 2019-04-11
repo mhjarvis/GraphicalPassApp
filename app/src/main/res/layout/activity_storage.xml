@@ -23,4 +23,16 @@
         android:text="@+id/passwordpart2"
         android:id="@+id/passwordpart2"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/passwordpart3"
+        android:id="@+id/passwordpart3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/passwordpart4"
+        android:id="@+id/passwordpart4"/>
+
 </LinearLayout>

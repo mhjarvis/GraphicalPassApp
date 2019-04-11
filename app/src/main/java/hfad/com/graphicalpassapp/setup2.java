@@ -7,8 +7,6 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.TextView;
 
-import static hfad.com.graphicalpassapp.setup1.MY_PREFS_NAME;
-
 public class setup2 extends Activity {
 
     @Override

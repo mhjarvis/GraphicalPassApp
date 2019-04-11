@@ -39,6 +39,7 @@
             android:background="@color/white"
             android:contentDescription="@string/anchor"
             android:cropToPadding="true"
+            android:onClick="useAnchor"
             android:src="@drawable/anchor" />
 
         <ImageButton
@@ -49,6 +50,7 @@
             android:background="@color/white"
             android:contentDescription="@string/bottle"
             android:cropToPadding="true"
+            android:onClick="useBottle"
             android:src="@drawable/bottle" />
 
     </LinearLayout>
@@ -68,6 +70,7 @@
             android:background="@color/white"
             android:contentDescription="@string/coffeecup"
             android:cropToPadding="true"
+            android:onClick="useCoffee"
             android:src="@drawable/coffee" />
 
         <ImageButton
@@ -78,6 +81,7 @@
             android:background="@color/white"
             android:contentDescription="@string/gears"
             android:cropToPadding="true"
+            android:onClick="useGears"
             android:src="@drawable/gears" />
 
     </LinearLayout>
@@ -97,6 +101,7 @@
             android:background="@color/white"
             android:contentDescription="@string/post"
             android:cropToPadding="true"
+            android:onClick="usePackage"
             android:src="@drawable/post" />
 
         <ImageButton
@@ -107,6 +112,7 @@
             android:background="@color/white"
             android:contentDescription="@string/key"
             android:cropToPadding="true"
+            android:onClick="useKey"
             android:src="@drawable/key" />
 
     </LinearLayout>
@@ -126,6 +132,7 @@
             android:background="@color/white"
             android:contentDescription="@string/rocket"
             android:cropToPadding="true"
+            android:onClick="useRocket"
             android:src="@drawable/rocket" />
 
         <ImageButton
@@ -136,9 +143,17 @@
             android:background="@color/white"
             android:contentDescription="@string/tracks"
             android:cropToPadding="true"
+            android:onClick="useTrack"
             android:src="@drawable/tracks" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/textViewName3"
+        android:id="@+id/textViewName3"
+        />
 
     <Button
         android:id="@+id/setupButton3"

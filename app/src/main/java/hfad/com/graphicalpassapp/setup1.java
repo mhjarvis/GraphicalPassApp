@@ -10,7 +10,7 @@ import android.content.Intent;
 public class setup1 extends Activity {
 
     public static final String EXTRA_MESSAGE = "setupText1";
-    public static final String MY_PREFS_NAME = "Password_Part_1";
+    //public static final String MY_PREFS_NAME = "Password_Part_1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class setup1 extends Activity {
         TextView total = (TextView) findViewById(R.id.textViewName);
         total.setText(returnKey); //call printName function to retrieve values
     }
-
+    /******* INDIVIDUAL IMAGEBUTTONS *******/
     public void useBunny(View view){
         save_Password_Part_1("bunny");
         printName();

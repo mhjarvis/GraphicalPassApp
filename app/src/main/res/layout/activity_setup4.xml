@@ -36,6 +36,7 @@
             android:background="@color/white"
             android:contentDescription="@string/blocksabc"
             android:cropToPadding="true"
+            android:onClick="useabc"
             android:src="@drawable/blocksabc" />
 
         <ImageButton
@@ -46,6 +47,7 @@
             android:background="@color/white"
             android:contentDescription="@string/compass"
             android:cropToPadding="true"
+            android:onClick="useCompas"
             android:src="@drawable/compas" />
 
     </LinearLayout>
@@ -65,6 +67,7 @@
             android:background="@color/white"
             android:contentDescription="@string/earth"
             android:cropToPadding="true"
+            android:onClick="useGlobe"
             android:src="@drawable/earthdrawing" />
 
         <ImageButton
@@ -75,6 +78,7 @@
             android:background="@color/white"
             android:contentDescription="@string/grapes"
             android:cropToPadding="true"
+            android:onClick="useGrapes"
             android:src="@drawable/grapes" />
 
     </LinearLayout>
@@ -94,6 +98,7 @@
             android:background="@color/white"
             android:contentDescription="@string/spiderweb"
             android:cropToPadding="true"
+            android:onClick="useWeb"
             android:src="@drawable/spiderweb" />
 
         <ImageButton
@@ -104,6 +109,7 @@
             android:background="@color/white"
             android:contentDescription="@string/swirls"
             android:cropToPadding="true"
+            android:onClick="useSpirral"
             android:src="@drawable/swirls" />
 
     </LinearLayout>
@@ -123,6 +129,7 @@
             android:background="@color/white"
             android:contentDescription="@string/branch"
             android:cropToPadding="true"
+            android:onClick="useBranch"
             android:src="@drawable/treebranch" />
 
         <ImageButton
@@ -133,9 +140,17 @@
             android:background="@color/white"
             android:contentDescription="@string/vulture"
             android:cropToPadding="true"
+            android:onClick="useVulture"
             android:src="@drawable/vulture" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/textViewName4"
+        android:id="@+id/textViewName4"
+        />
 
     <Button
         android:id="@+id/setupButton4"
