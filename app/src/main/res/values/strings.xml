@@ -83,4 +83,5 @@
     <string name="rocket">rocket</string>
     <string name="tracks">tracks</string>
     <string name="pigycartoon">piggycartoon</string>
+    <string name="title_activity_notes">notes</string>
 </resources>

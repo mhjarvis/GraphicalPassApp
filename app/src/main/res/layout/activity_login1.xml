@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/elephant"
-
+            android:onClick="useBunny"
             android:cropToPadding="true"
             android:src="@drawable/elephant" />
 
@@ -139,6 +139,13 @@
             android:src="@drawable/hippo" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testTextViewName"
+        android:id="@+id/testTextViewName"
+        android:textColor="#000" />
 
     <Button
         android:id="@+id/loginButton1"

@@ -1,5 +1,7 @@
 package hfad.com.graphicalpassapp;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -75,5 +77,11 @@ public class storage extends AppCompatActivity {
         phrase = pass4intro + phrase;
         return phrase;  //return value
 
+    }
+
+    //use button to pull up note-taking activity
+    public void getNotes(View view){
+        Intent goToNotes = new Intent(this, notes.class);
+        startActivity(goToNotes);
     }
 }
