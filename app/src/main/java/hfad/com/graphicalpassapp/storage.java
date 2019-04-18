@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class storage extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,129 @@ public class storage extends AppCompatActivity {
         test2();
         test3();
         test4();
+
+        createLogin(); //creates login password
+        createPassword();
+        retrievePassword(); //pull and print password to storage activity screen for testing
+
+        String t1 = rp1();
+        String t2 = rp2();
+
+        String answer = testPassword(t1, t2);
+        testIt(answer);
     }
+
+    public String testPassword(String var, String var2){
+        if(var.equals(var2)){
+            return "Passwords Match";
+        } else {
+            return "Incorrect Password";
+        }
+    }
+//login password create
+        public void createLogin() {
+            String a, b, c, d;
+
+            a = getCon("test_password_key_part_1");
+            b = getCon("test_password_key_part_2");
+            c = getCon("test_password_key_part_3");
+            d = getCon("test_password_key_part_4");
+
+            a = a.concat(b);
+            a = a.concat(c);
+            a = a.concat(d);
+
+            TextView total = (TextView) findViewById(R.id.con);
+            total.setText(a);
+            attempt_password(a);
+        }
+
+        public void testIt(String a){
+
+        TextView total = (TextView) findViewById(R.id.isCorrect);
+        total.setText(a);
+        }
+
+
+    public void createPassword() {
+        String e, f, g, h;
+
+        e = getCon("password_key_part_1");
+        f = getCon("password_key_part_2");
+        g = getCon("password_key_part_3");
+        h = getCon("password_key_part_4");
+
+        e = e.concat(f);
+        e = e.concat(g);
+        e = e.concat(h);
+
+        TextView total = (TextView) findViewById(R.id.pass);
+        total.setText(e);
+        main_password(e); //saves attempt to preferences
+    }
+
+    public void retrievePassword(){
+        String master;
+
+        master = getCon("master_password");
+
+        TextView total = (TextView) findViewById(R.id.printMasterPassword);
+        total.setText(master);
+    }
+
+    public String rp1(){
+        String m;
+        m = getCon("master_password");
+        return m;
+    }
+    public String rp2(){
+        String n;
+        n = getCon("attempt_password");
+        return n;
+    }
+
+
+//function to retrieve set values from storage
+        public String getCon(String mykey){
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        String phrase=pref.getString(mykey, null);
+        return phrase;
+        }
+
+
+
+
+        //save the createPassword to Shared Preferences
+
+    public void main_password(String value){
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        String key = "master_password";
+        editor.putString(key, value); //
+        editor.apply(); //commit changes
+    }
+
+    public void attempt_password(String value){
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        String key = "attempt_password";
+        editor.putString(key, value); //
+        editor.apply(); //commit changes
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void useBunny() {
         TextView total = (TextView) findViewById(R.id.passwordpart1);
