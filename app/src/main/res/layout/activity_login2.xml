@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/batman"
+    android:background="#FFF"
     tools:context=".login2">
 
     <TextView
@@ -38,6 +38,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/bearcartoon"
+            android:onClick="useBear"
             android:cropToPadding="true"
             android:src="@drawable/bearcartoon" />
 
@@ -48,6 +49,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/pigcartoon"
+            android:onClick="useDetective"
             android:cropToPadding="true"
             android:src="@drawable/det" />
 
@@ -67,6 +69,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/greenguycartoon"
+            android:onClick="useGreenMonster"
             android:cropToPadding="true"
             android:src="@drawable/greenguy" />
 
@@ -77,6 +80,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/monkeycartoon"
+            android:onClick="useMonkey"
             android:cropToPadding="true"
             android:src="@drawable/moneycartoon" />
 
@@ -96,6 +100,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/pigycartoon"
+            android:onClick="usePig"
             android:cropToPadding="true"
             android:src="@drawable/pigy" />
 
@@ -106,6 +111,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/ratcartoon"
+            android:onClick="useRat"
             android:cropToPadding="true"
             android:src="@drawable/ratcartoon" />
 
@@ -125,6 +131,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/securitycartoon"
+            android:onClick="useSecurity"
             android:cropToPadding="true"
             android:src="@drawable/securityman" />
 
@@ -135,6 +142,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/thiefcartoon"
+            android:onClick="useThief"
             android:cropToPadding="true"
             android:src="@drawable/thief" />
 
@@ -149,5 +157,12 @@
         android:background="#FFF"
         android:text="@string/loginButton2"
         android:onClick="getLoginPage_3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testTextViewName2"
+        android:id="@+id/testTextViewName2"
+        />
 
 </LinearLayout>

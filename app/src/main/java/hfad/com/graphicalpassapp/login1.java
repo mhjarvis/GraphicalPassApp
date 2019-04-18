@@ -46,13 +46,38 @@ public class login1 extends Activity {
         testPassword_Part_1("bunny");
         testPrintName();
     }
+    public void useElephant(View view){
+        testPassword_Part_1("elephant");
+        testPrintName();
+    }
 
+    public void useFish(View view){
+        testPassword_Part_1("fish");
+        testPrintName();
+    }
 
+    public void useZebra(View view){
+        testPassword_Part_1("zebra");
+        testPrintName();
+    }
 
+    public void useLion(View view){
+        testPassword_Part_1("lion");
+        testPrintName();
+    }
 
+    public void useHawk(View view){
+        testPassword_Part_1("hawk");
+        testPrintName();
+    }
 
+    public void useScorpion(View view){
+        testPassword_Part_1("scorpion");
+        testPrintName();
+    }
 
-
-
-
+    public void useHippo(View view){
+        testPassword_Part_1("hippo");
+        testPrintName();
+    }
 }

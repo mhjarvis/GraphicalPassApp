@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context=".login1">
 
     <TextView
@@ -37,7 +38,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/elephant"
-            android:onClick="useBunny"
+            android:onClick="useElephant"
             android:cropToPadding="true"
             android:src="@drawable/elephant" />
 
@@ -49,6 +50,7 @@
             android:background="@color/white"
             android:contentDescription="@string/bunny"
             android:cropToPadding="true"
+            android:onClick="useBunny"
             android:src="@drawable/bunny" />
 
     </LinearLayout>
@@ -67,6 +69,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/fish"
+            android:onClick="useFish"
             android:cropToPadding="true"
             android:src="@drawable/fish" />
 
@@ -77,6 +80,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/zebra"
+            android:onClick="useZebra"
             android:cropToPadding="true"
             android:src="@drawable/zebra" />
 
@@ -96,6 +100,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/lion"
+            android:onClick="useLion"
             android:cropToPadding="true"
             android:src="@drawable/lion" />
 
@@ -106,6 +111,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/owl"
+            android:onClick="useHawk"
             android:cropToPadding="true"
             android:src="@drawable/owl" />
 
@@ -125,6 +131,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/scorpion"
+            android:onClick="useScorpion"
             android:cropToPadding="true"
             android:src="@drawable/scorpion" />
 
@@ -135,17 +142,11 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/hippo"
+            android:onClick="useHippo"
             android:cropToPadding="true"
             android:src="@drawable/hippo" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@+id/testTextViewName"
-        android:id="@+id/testTextViewName"
-        android:textColor="#000" />
 
     <Button
         android:id="@+id/loginButton1"
@@ -156,5 +157,12 @@
         android:background="#FFF"
         android:text="@string/loginButton1"
         android:onClick="getLoginPage_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testTextViewName"
+        android:id="@+id/testTextViewName"
+        android:textColor="#000" />
 
 </LinearLayout>

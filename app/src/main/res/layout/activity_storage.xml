@@ -38,8 +38,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@+id/textViewName4"
-        android:id="@+id/textViewName4"
+        android:text="@+id/testpasswordpart1"
+        android:id="@+id/testpasswordpart1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testpasswordpart2"
+        android:id="@+id/testpasswordpart2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testpasswordpart3"
+        android:id="@+id/testpasswordpart3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testpasswordpart4"
+        android:id="@+id/testpasswordpart4"
         />
 
     <Button

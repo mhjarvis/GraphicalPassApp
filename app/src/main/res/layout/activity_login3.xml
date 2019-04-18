@@ -36,6 +36,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/anchor"
+            android:onClick="useAnchor"
             android:cropToPadding="true"
             android:src="@drawable/anchor" />
 
@@ -46,6 +47,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/bottle"
+            android:onClick="useBottle"
             android:cropToPadding="true"
             android:src="@drawable/bottle" />
 
@@ -65,6 +67,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/coffeecup"
+            android:onClick="useCoffee"
             android:cropToPadding="true"
             android:src="@drawable/coffee" />
 
@@ -75,6 +78,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/gears"
+            android:onClick="useGears"
             android:cropToPadding="true"
             android:src="@drawable/gears" />
 
@@ -94,6 +98,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/post"
+            android:onClick="usePackage"
             android:cropToPadding="true"
             android:src="@drawable/post" />
 
@@ -104,6 +109,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/key"
+            android:onClick="useKey"
             android:cropToPadding="true"
             android:src="@drawable/key" />
 
@@ -123,6 +129,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/rocket"
+            android:onClick="useRocket"
             android:cropToPadding="true"
             android:src="@drawable/rocket" />
 
@@ -132,11 +139,20 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/tracks"
+            android:onClick="useTrack"
             android:cropToPadding="true"
             android:src="@drawable/tracks"
             android:layout_height="100dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/testTextViewName3"
+        android:id="@+id/testTextViewName3"
+        />
+
 
     <Button
         android:id="@+id/loginButton3"
