@@ -2,14 +2,11 @@ package hfad.com.graphicalpassapp;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-//import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-//import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStream;
@@ -18,25 +15,26 @@ import java.io.OutputStreamWriter;
 
 public class notes extends AppCompatActivity {
 
-    EditText EditText1;
+    EditText myNotes; //creates edible text
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notes);
+        setContentView(R.layout.activity_notes); //link to xml sheet
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //floating action button changed to save notes
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Save("Note1.txt");
+                Save("Note.txt");
             }
         });
         
-        EditText1 = (EditText) findViewById(R.id.EditText1);
-        EditText1.setText(Open("Note1.txt"));
+        myNotes = (EditText) findViewById(R.id.EditText1); //assign find value
+        myNotes.setText(Open("Note.txt")); //opens appropriate file when loaded
     }
 
     public String Open(String fileName) {
@@ -70,7 +68,7 @@ public class notes extends AppCompatActivity {
         try {
             OutputStreamWriter out =
                     new OutputStreamWriter(openFileOutput(fileName, 0));
-            out.write(EditText1.getText().toString());
+            out.write(myNotes.getText().toString());
             out.close();
             Toast.makeText(this, "Note saved!", Toast.LENGTH_SHORT).show();
         } catch (Throwable t) {

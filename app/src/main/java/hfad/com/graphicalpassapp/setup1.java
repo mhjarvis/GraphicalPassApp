@@ -14,6 +14,8 @@ public class setup1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup1); //link to setup1 xml
+
+
     }
 
     // logic for "NEXT button
@@ -41,6 +43,7 @@ public class setup1 extends Activity {
         total.setText(returnKey); //call printName function to retrieve values
     }
     ****/
+
 
     //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useBunny(View view){

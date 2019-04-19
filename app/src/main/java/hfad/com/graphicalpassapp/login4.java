@@ -41,7 +41,7 @@ public class login4 extends Activity {
     }
      ****/
 
-    /******* INDIVIDUAL IMAGEBUTTONS *******/
+    //indivudal functions
     public void useabc(View view){
         testPassword_Part_4("abc");
     }

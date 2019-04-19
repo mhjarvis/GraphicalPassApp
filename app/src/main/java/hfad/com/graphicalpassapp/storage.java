@@ -17,7 +17,25 @@ public class storage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_storage);
 
-        useBunny();
+
+        //get user choice from main_activity
+        String userChoice = getCon("startingChoice");
+
+        if(userChoice.equals("login")){
+            String mas = retrievePassword(); //retrieves the stored password
+            String log = createLogin(); //build login password chosen
+            String test = testPassword(mas, log); //test wether the passwords match and store result in 'test'
+            testIt(test); //send value to output screen
+        } else if(userChoice.equals("setup")){
+            String storeMe = createPassword();
+            storeMasterPassword(storeMe);
+            testIt("the password has been stored");
+        }
+        //pull value from page 1 choice
+        //route based on value
+
+
+
         useBunny2();
         useBunny3();
         useBunny4();
@@ -26,20 +44,91 @@ public class storage extends AppCompatActivity {
         test3();
         test4();
 
-        createLogin(); //creates login password
+        createLogin();
         createPassword();
         retrievePassword(); //pull and print password to storage activity screen for testing
 
         String t1 = rp1();
         String t2 = rp2();
 
-        String answer = testPassword(t1, t2);
-        testIt(answer);
+        //String answer = testPassword(t1, t2);
+        //testIt(answer);
 
         //if (answer.equals("Passwords Match")){
 
         //}
     }
+
+    //Create password chosen by user to login (to match to stored password)
+    public String createLogin() {
+        String a = getCon("test_password_key_part_1"); //retrieve 1st value chosen
+        String b = getCon("test_password_key_part_2"); //retrieve 2nd value chosen
+        String c = getCon("test_password_key_part_3"); //retrieve 3rd value chosen
+        String d = getCon("test_password_key_part_4"); //retrieve 4th value chosen
+
+        String final_pass = ""; //variable to hold password to test
+        final_pass = final_pass.concat(a + b + c + d); //combine all values into string
+
+        TextView total = findViewById(R.id.con); //find field in xml
+        total.setText(final_pass); //set text value to pass (TESTING ONLY)
+        attempt_password(final_pass); //test password
+
+        return final_pass;
+    }
+
+    //Create password chosen during Setup Password (to store)
+    public String createPassword() {
+
+        String e = getCon("password_key_part_1"); //retrieve 1st value chosen during setup
+        String f = getCon("password_key_part_2"); //retrieve 2nd value chosen during setup
+        String g = getCon("password_key_part_3"); //retrieve 3rd value chosen during setup
+        String h = getCon("password_key_part_4"); //retireve 4th value chosen during setup
+
+        String store_pass = ""; //variable to hold password to test
+        store_pass = store_pass.concat(e + f + g + h); //combine all values into string
+
+        TextView total = (TextView) findViewById(R.id.pass); //find field in xml
+        total.setText(store_pass); //set text value to pass (TESTING ONLY)
+        storeMasterPassword(store_pass); //saves attempt to preferences
+
+        return store_pass;
+    }
+
+    //Retrieve stored password value
+    public String retrievePassword(){
+        String master;
+
+        master = getCon("master_password");
+
+        TextView total = (TextView) findViewById(R.id.printMasterPassword);
+        total.setText(master);
+        return master;
+    }
+
+    public void storeMasterPassword(String value){
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        String key = "master_password";
+        editor.putString(key, value); //
+        editor.apply(); //commit changes
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public String testPassword(String var, String var2){
         if(var.equals(var2)){
@@ -48,56 +137,18 @@ public class storage extends AppCompatActivity {
             return "Incorrect Password";
         }
     }
-//login password create
-        public void createLogin() {
-            String a, b, c, d;
 
-            a = getCon("test_password_key_part_1");
-            b = getCon("test_password_key_part_2");
-            c = getCon("test_password_key_part_3");
-            d = getCon("test_password_key_part_4");
-
-            a = a.concat(b);
-            a = a.concat(c);
-            a = a.concat(d);
-
-            TextView total = (TextView) findViewById(R.id.con);
-            total.setText(a);
-            attempt_password(a);
-        }
 
         public void testIt(String a){
 
-        TextView total = (TextView) findViewById(R.id.isCorrect);
+        TextView total = (TextView) findViewById(R.id.doesitwork);
         total.setText(a);
         }
 
 
-    public void createPassword() {
-        String e, f, g, h;
 
-        e = getCon("password_key_part_1");
-        f = getCon("password_key_part_2");
-        g = getCon("password_key_part_3");
-        h = getCon("password_key_part_4");
 
-        e = e.concat(f);
-        e = e.concat(g);
-        e = e.concat(h);
 
-        TextView total = (TextView) findViewById(R.id.pass);
-        total.setText(e);
-        main_password(e); //saves attempt to preferences
-    }
-
-    public void retrievePassword(){
-        String master;
-
-        master = getCon("master_password");
-
-        TextView total = (TextView) findViewById(R.id.printMasterPassword);
-        total.setText(master);
-    }
 
     public String rp1(){
         String m;
@@ -125,13 +176,6 @@ public class storage extends AppCompatActivity {
 
         //save the createPassword to Shared Preferences
 
-    public void main_password(String value){
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-        String key = "master_password";
-        editor.putString(key, value); //
-        editor.apply(); //commit changes
-    }
 
     public void attempt_password(String value){
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
@@ -153,13 +197,13 @@ public class storage extends AppCompatActivity {
 
 
 
-    public void useBunny() {
+    /*public void useBunny() {
         TextView total = (TextView) findViewById(R.id.passwordpart1);
         total.setText(printName()); //call printName function to retrieve values
     }
 
     /* FUNCTION TO RETRIEVE STORED VALUE (for testing here) */
-    public String printName() {
+    /*public String printName() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);  //start shared preferences
         SharedPreferences.Editor editor = pref.edit();
         String phrase=pref.getString("password_key_part_1", null); //variable 'phrase' holds value of key_name5
@@ -167,7 +211,7 @@ public class storage extends AppCompatActivity {
         phrase = pass1intro + phrase;
         return phrase;  //return value to 'useElephant()'
 
-    }
+    } */
 
     public void useBunny2() {
         TextView total = (TextView) findViewById(R.id.passwordpart2);
