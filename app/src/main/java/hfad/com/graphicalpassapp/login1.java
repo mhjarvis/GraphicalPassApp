@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
-import android.widget.TextView;
 
 public class login1 extends Activity {
 
@@ -27,12 +26,14 @@ public class login1 extends Activity {
     public void testPassword_Part_1(String value){
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
-        String testKey = "test_password_key_part_1";
-        editor.putString(testKey, value); //
+        String testKey = "test_password_key_part_1"; //save value in shared preferences
+        editor.putString(testKey, value); // key combination
         editor.apply(); //commit changes
     }
 
-    /******* FUNCTION TO RETRIEVE STORED VALUE (for testing here) *******/
+    /* TEST FUNCTION - USE TO DISPLAY USER CHOICE */
+    // If used, include 'printName();' in each function below
+    /**** FUNCTION TO RETRIEVE STORED VALUE (testing purposes prints to screen)
     public void testPrintName() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         //return pref.getString("password_key_part_1", null);
@@ -40,44 +41,37 @@ public class login1 extends Activity {
         TextView total = (TextView) findViewById(R.id.testTextViewName);
         total.setText(returnKey); //call printName function to retrieve values
     }
+     ****/
 
-    /******* INDIVIDUAL IMAGEBUTTONS *******/
+    //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useBunny(View view){
         testPassword_Part_1("bunny");
-        testPrintName();
     }
     public void useElephant(View view){
         testPassword_Part_1("elephant");
-        testPrintName();
     }
 
     public void useFish(View view){
         testPassword_Part_1("fish");
-        testPrintName();
     }
 
     public void useZebra(View view){
         testPassword_Part_1("zebra");
-        testPrintName();
     }
 
     public void useLion(View view){
         testPassword_Part_1("lion");
-        testPrintName();
     }
 
     public void useHawk(View view){
         testPassword_Part_1("hawk");
-        testPrintName();
     }
 
     public void useScorpion(View view){
         testPassword_Part_1("scorpion");
-        testPrintName();
     }
 
     public void useHippo(View view){
         testPassword_Part_1("hippo");
-        testPrintName();
     }
 }

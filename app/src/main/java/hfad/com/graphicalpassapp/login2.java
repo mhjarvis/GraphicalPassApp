@@ -33,7 +33,9 @@ public class login2 extends Activity {
         editor.apply(); //commit changes
     }
 
-    /******* FUNCTION TO RETRIEVE STORED VALUE (for testing here) *******/
+    /* TEST FUNCTION - USE TO DISPLAY USER CHOICE */
+    // If used, include 'printName();' in each function below
+    /**** FUNCTION TO RETRIEVE STORED VALUE (testing purposes prints to screen)
     public void testPrintName() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         //return pref.getString("password_key_part_2", null);
@@ -41,44 +43,37 @@ public class login2 extends Activity {
         TextView total = (TextView) findViewById(R.id.testTextViewName2);
         total.setText(returnKey); //call printName function to retrieve values
     }
+     ****/
 
-    /******* INDIVIDUAL IMAGEBUTTONS *******/
+    //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useBear(View view){
         testPassword_Part_2("bear");
-        testPrintName();
     }
     public void useDetective(View view){
         testPassword_Part_2("detective");
-        testPrintName();
     }
 
     public void useGreenMonster(View view){
         testPassword_Part_2("GreenMonster");
-        testPrintName();
     }
 
     public void useMonkey(View view){
         testPassword_Part_2("monkey");
-        testPrintName();
     }
 
     public void usePig(View view){
         testPassword_Part_2("pig");
-        testPrintName();
     }
 
     public void useRat(View view){
         testPassword_Part_2("rat");
-        testPrintName();
     }
 
     public void useSecurity(View view){
         testPassword_Part_2("security");
-        testPrintName();
     }
 
     public void useThief(View view){
         testPassword_Part_2("thief");
-        testPrintName();
     }
 }

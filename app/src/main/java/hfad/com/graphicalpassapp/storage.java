@@ -35,6 +35,10 @@ public class storage extends AppCompatActivity {
 
         String answer = testPassword(t1, t2);
         testIt(answer);
+
+        //if (answer.equals("Passwords Match")){
+
+        //}
     }
 
     public String testPassword(String var, String var2){

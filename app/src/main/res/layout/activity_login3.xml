@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context=".login3">
 
     <TextView
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/selectSetupImage3"
+        android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -32,7 +34,7 @@
         <ImageButton
             android:id="@+id/imageButton17"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/anchor"
@@ -43,7 +45,7 @@
         <ImageButton
             android:id="@+id/imageButton18"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/bottle"
@@ -63,7 +65,7 @@
         <ImageButton
             android:id="@+id/imageButton19"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/coffeecup"
@@ -74,7 +76,7 @@
         <ImageButton
             android:id="@+id/imageButton20"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/gears"
@@ -94,7 +96,7 @@
         <ImageButton
             android:id="@+id/imageButton21"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/post"
@@ -105,7 +107,7 @@
         <ImageButton
             android:id="@+id/imageButton22"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/key"
@@ -124,8 +126,8 @@
 
         <ImageButton
             android:id="@+id/imageButton23"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/rocket"
@@ -135,24 +137,16 @@
 
         <ImageButton
             android:id="@+id/imageButton24"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/tracks"
             android:onClick="useTrack"
             android:cropToPadding="true"
-            android:src="@drawable/tracks"
-            android:layout_height="100dp" />
+            android:src="@drawable/tracks" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@+id/testTextViewName3"
-        android:id="@+id/testTextViewName3"
-        />
-
 
     <Button
         android:id="@+id/loginButton3"
@@ -163,5 +157,14 @@
         android:background="#FFF"
         android:text="@string/loginButton3"
         android:onClick="getLoginPage_4" />
+
+    <!-- Uncomment to display value of user image choice
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@+id/testTextViewName3"
+    android:id="@+id/testTextViewName3"
+    />
+-->
 
 </LinearLayout>

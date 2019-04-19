@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF"
     tools:context=".setup4">
 
     <TextView
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/selectSetupImage4"
+        android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -42,7 +44,7 @@
         <ImageButton
             android:id="@+id/imageButton26"
             android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/compass"
@@ -73,7 +75,7 @@
         <ImageButton
             android:id="@+id/imageButton28"
             android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/grapes"
@@ -104,7 +106,7 @@
         <ImageButton
             android:id="@+id/imageButton30"
             android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/swirls"
@@ -123,7 +125,7 @@
 
         <ImageButton
             android:id="@+id/imageButton31"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
@@ -134,8 +136,8 @@
 
         <ImageButton
             android:id="@+id/imageButton32"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/vulture"
@@ -144,13 +146,6 @@
             android:src="@drawable/vulture" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@+id/textViewName4"
-        android:id="@+id/textViewName4"
-        />
 
     <Button
         android:id="@+id/setupButton4"
@@ -162,4 +157,14 @@
         android:onClick="getStorage"
         android:text="@string/setupButton3"
         android:textSize="18sp" />
+
+    <!-- Uncomment to display value of user image choice
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/textViewName4"
+        android:id="@+id/textViewName4"
+        />
+     -->
+
     </LinearLayout>

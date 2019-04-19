@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFF"
     tools:context=".setup1">
-
 
     <TextView
         android:id="@+id/loginText"
@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textColor="#000"
         android:text="@string/selectSetupImage1"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -27,9 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
-
         android:orientation="horizontal">
 
         <ImageButton
@@ -46,9 +45,9 @@
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/bunny"
             android:cropToPadding="true"
             android:onClick="useBunny"
@@ -68,7 +67,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/fish"
             android:cropToPadding="true"
             android:onClick="useFish"
@@ -79,7 +78,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/zebra"
             android:cropToPadding="true"
             android:onClick="useZebra"
@@ -99,7 +98,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/lion"
             android:cropToPadding="true"
             android:onClick="useLion"
@@ -110,7 +109,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/owl"
             android:cropToPadding="true"
             android:onClick="useHawk"
@@ -130,7 +129,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/scorpion"
             android:cropToPadding="true"
             android:onClick="useScorpion"
@@ -141,7 +140,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_weight="1"
-            android:background="@color/white"
+            android:background="#FFF"
             android:contentDescription="@string/hippo"
             android:cropToPadding="true"
             android:onClick="useHippo"
@@ -159,11 +158,13 @@
         android:onClick="getSetupPage_2"
         android:text="@string/setupButton1" />
 
+    <!-- Uncomment to display value of user image choice
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/textViewName"
         android:id="@+id/textViewName"
         android:textColor="#000" />
+    -->
 
 </LinearLayout>

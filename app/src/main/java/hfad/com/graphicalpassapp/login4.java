@@ -29,7 +29,9 @@ public class login4 extends Activity {
         editor.apply(); //commit changes
     }
 
-    /******* FUNCTION TO RETRIEVE STORED VALUE (for testing here) *******/
+    /* TEST FUNCTION - USE TO DISPLAY USER CHOICE */
+    // If used, include 'printName();' in each function below
+    /**** FUNCTION TO RETRIEVE STORED VALUE (testing purposes prints to screen)
     public void testPrintName() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         //return pref.getString("password_key_part_2", null);
@@ -37,44 +39,37 @@ public class login4 extends Activity {
         TextView total = (TextView) findViewById(R.id.testTextViewName4);
         total.setText(returnKey); //call printName function to retrieve values
     }
+     ****/
 
     /******* INDIVIDUAL IMAGEBUTTONS *******/
     public void useabc(View view){
         testPassword_Part_4("abc");
-        testPrintName();
     }
     public void useCompas(View view){
         testPassword_Part_4("compass");
-        testPrintName();
     }
 
     public void useGlobe(View view){
         testPassword_Part_4("globe");
-        testPrintName();
     }
 
     public void useGrapes(View view){
         testPassword_Part_4("grapes");
-        testPrintName();
     }
 
     public void useWeb(View view){
         testPassword_Part_4("web");
-        testPrintName();
     }
 
     public void useSpirral(View view){
         testPassword_Part_4("spirral");
-        testPrintName();
     }
 
     public void useBranch(View view){
         testPassword_Part_4("branch");
-        testPrintName();
     }
 
     public void useVulture(View view){
         testPassword_Part_4("vulture");
-        testPrintName();
     }
 }

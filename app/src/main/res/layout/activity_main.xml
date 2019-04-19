@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Main Activity will serve as basic logon and setup screens -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,22 +11,12 @@
     android:background="@drawable/batman"
     tools:context="hfad.com.graphicalpassapp.MainActivity">
 
-
-    <EditText
-        android:id="@+id/loginText"
-        android:layout_marginTop="100dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="@android:color/black"
-        android:hint="@string/userHint" />
-
     <Button
         android:id="@+id/loginButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         android:background="#FFF"
         android:text="@string/loginButton"
         android:onClick="getLogin" />
@@ -42,36 +33,15 @@
 
 </LinearLayout>
 
+    <!-- Remove comment to add User Name input and place withing -LinearLayout- -->
     <!--
     <EditText
-        android:id="@+id/passwordText"
-        android:layout_marginTop="10dp"
+        android:id="@+id/loginText"
+        android:layout_marginTop="100dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="@string/userPass"/> -->
+        android:backgroundTint="@android:color/black"
+        android:hint="@string/userHint" /> -->
 
-    <!-- <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:textColor="#FFF"
-        android:textSize="15dp"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:text="@string/passLength" />
-
-    <Spinner
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/color"
-        android:textAlignment="center"
-        android:background="#FFF"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:entries="@array/passwordLength" /> -->
-
-    <!-- for setting up a new username/password combo -->
-
+    <!-- Button serves solely as logon if Password is established -->

@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/selectSetupImage2"
+        android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -27,14 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton9"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/bearcartoon"
@@ -44,8 +44,8 @@
 
         <ImageButton
             android:id="@+id/imageButton10"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/pigcartoon"
@@ -65,7 +65,7 @@
         <ImageButton
             android:id="@+id/imageButton11"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/greenguycartoon"
@@ -76,7 +76,7 @@
         <ImageButton
             android:id="@+id/imageButton12"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/monkeycartoon"
@@ -96,7 +96,7 @@
         <ImageButton
             android:id="@+id/imageButton13"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/pigycartoon"
@@ -107,7 +107,7 @@
         <ImageButton
             android:id="@+id/imageButton14"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/ratcartoon"
@@ -127,7 +127,7 @@
         <ImageButton
             android:id="@+id/imageButton15"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/securitycartoon"
@@ -138,7 +138,7 @@
         <ImageButton
             android:id="@+id/imageButton16"
             android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/thiefcartoon"
@@ -158,11 +158,13 @@
         android:text="@string/loginButton2"
         android:onClick="getLoginPage_3" />
 
+    <!-- Uncomment to display value of user image choice
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/testTextViewName2"
         android:id="@+id/testTextViewName2"
         />
+    -->
 
 </LinearLayout>

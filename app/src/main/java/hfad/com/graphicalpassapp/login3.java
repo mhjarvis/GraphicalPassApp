@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
-import android.widget.TextView;
 
 public class login3 extends Activity {
 
@@ -33,7 +32,9 @@ public class login3 extends Activity {
         editor.apply(); //commit changes
     }
 
-    /******* FUNCTION TO RETRIEVE STORED VALUE (for testing here) *******/
+    /* TEST FUNCTION - USE TO DISPLAY USER CHOICE */
+    // If used, include 'printName();' in each function below
+    /**** FUNCTION TO RETRIEVE STORED VALUE (testing purposes prints to screen)
     public void testPrintName() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         //return pref.getString("password_key_part_2", null);
@@ -41,45 +42,38 @@ public class login3 extends Activity {
         TextView total = (TextView) findViewById(R.id.testTextViewName3);
         total.setText(returnKey); //call printName function to retrieve values
     }
+     ****/
 
-    /******* INDIVIDUAL IMAGEBUTTONS *******/
+    //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useAnchor(View view){
         testPassword_Part_3("anchor");
-        testPrintName();
     }
     public void useBottle(View view){
         testPassword_Part_3("bottle");
-        testPrintName();
     }
 
     public void useCoffee(View view){
         testPassword_Part_3("coffee");
-        testPrintName();
     }
 
     public void useGears(View view){
         testPassword_Part_3("gears");
-        testPrintName();
     }
 
     public void usePackage(View view){
         testPassword_Part_3("package");
-        testPrintName();
     }
 
     public void useKey(View view){
         testPassword_Part_3("key");
-        testPrintName();
     }
 
     public void useRocket(View view){
         testPassword_Part_3("rocket");
-        testPrintName();
     }
 
     public void useTrack(View view){
         testPassword_Part_3("track");
-        testPrintName();
     }
 
 
