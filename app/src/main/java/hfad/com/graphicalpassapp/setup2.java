@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class setup2 extends Activity {
@@ -46,33 +47,49 @@ public class setup2 extends Activity {
     //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useBear(View view){
         save_Password_Part_2("bear");
+        ImageButton btn = findViewById(R.id.imageButton9);
+        btn.setImageResource(R.drawable.bearcartoon_selected);
     }
 
     public void useDetective(View view){
         save_Password_Part_2("detective");
+        ImageButton btn = findViewById(R.id.imageButton10);
+        btn.setImageResource(R.drawable.det_selected);
     }
 
     public void useGreenMonster(View view){
         save_Password_Part_2("GreenMonster");
+        ImageButton btn = findViewById(R.id.imageButton11);
+        btn.setImageResource(R.drawable.greenguy_selected);
     }
 
     public void useMonkey(View view){
         save_Password_Part_2("monkey");
+        ImageButton btn = findViewById(R.id.imageButton12);
+        btn.setImageResource(R.drawable.moneycartoon_selected);
     }
 
     public void usePig(View view){
         save_Password_Part_2("pig");
+        ImageButton btn = findViewById(R.id.imageButton13);
+        btn.setImageResource(R.drawable.pigy_selected);
     }
 
     public void useRat(View view){
         save_Password_Part_2("rat");
+        ImageButton btn = findViewById(R.id.imageButton14);
+        btn.setImageResource(R.drawable.ratcartoon_selected);
     }
 
     public void useSecurity(View view){
         save_Password_Part_2("security");
+        ImageButton btn = findViewById(R.id.imageButton15);
+        btn.setImageResource(R.drawable.securityman_selected);
     }
 
     public void useThief(View view){
         save_Password_Part_2("thief");
+        ImageButton btn = findViewById(R.id.imageButton16);
+        btn.setImageResource(R.drawable.thief_selected);
     }
 }

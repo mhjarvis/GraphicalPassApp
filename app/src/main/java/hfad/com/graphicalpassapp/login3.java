@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageButton;
 
 public class login3 extends Activity {
 
@@ -47,33 +48,49 @@ public class login3 extends Activity {
     //FUNCTIONS FOR INDIVIDUAL IMAGES
     public void useAnchor(View view){
         testPassword_Part_3("anchor");
+        ImageButton btn = findViewById(R.id.imageButton17);
+        btn.setImageResource(R.drawable.anchor_selected);
     }
     public void useBottle(View view){
         testPassword_Part_3("bottle");
+        ImageButton btn = findViewById(R.id.imageButton18);
+        btn.setImageResource(R.drawable.bottle_selected);
     }
 
     public void useCoffee(View view){
         testPassword_Part_3("coffee");
+        ImageButton btn = findViewById(R.id.imageButton19);
+        btn.setImageResource(R.drawable.coffee_selected);
     }
 
     public void useGears(View view){
         testPassword_Part_3("gears");
+        ImageButton btn = findViewById(R.id.imageButton20);
+        btn.setImageResource(R.drawable.gears_selected);
     }
 
     public void usePackage(View view){
         testPassword_Part_3("package");
+        ImageButton btn = findViewById(R.id.imageButton21);
+        btn.setImageResource(R.drawable.post_selected);
     }
 
     public void useKey(View view){
         testPassword_Part_3("key");
+        ImageButton btn = findViewById(R.id.imageButton22);
+        btn.setImageResource(R.drawable.key_selected);
     }
 
     public void useRocket(View view){
         testPassword_Part_3("rocket");
+        ImageButton btn = findViewById(R.id.imageButton23);
+        btn.setImageResource(R.drawable.rocket_selected);
     }
 
     public void useTrack(View view){
         testPassword_Part_3("track");
+        ImageButton btn = findViewById(R.id.imageButton24);
+        btn.setImageResource(R.drawable.tracks_selected);
     }
 
 

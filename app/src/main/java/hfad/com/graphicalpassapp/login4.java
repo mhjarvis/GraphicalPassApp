@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -44,32 +45,48 @@ public class login4 extends Activity {
     //indivudal functions
     public void useabc(View view){
         testPassword_Part_4("abc");
+        ImageButton btn = findViewById(R.id.imageButton25);
+        btn.setImageResource(R.drawable.blocksabc_selected);
     }
     public void useCompas(View view){
         testPassword_Part_4("compass");
+        ImageButton btn = findViewById(R.id.imageButton26);
+        btn.setImageResource(R.drawable.compas_selected);
     }
 
     public void useGlobe(View view){
         testPassword_Part_4("globe");
+        ImageButton btn = findViewById(R.id.imageButton27);
+        btn.setImageResource(R.drawable.earthdrawing_selected);
     }
 
     public void useGrapes(View view){
         testPassword_Part_4("grapes");
+        ImageButton btn = findViewById(R.id.imageButton28);
+        btn.setImageResource(R.drawable.grapes_selected);
     }
 
     public void useWeb(View view){
         testPassword_Part_4("web");
+        ImageButton btn = findViewById(R.id.imageButton29);
+        btn.setImageResource(R.drawable.spiderweb_selected);
     }
 
     public void useSpirral(View view){
         testPassword_Part_4("spirral");
+        ImageButton btn = findViewById(R.id.imageButton30);
+        btn.setImageResource(R.drawable.swirls_selected);
     }
 
     public void useBranch(View view){
         testPassword_Part_4("branch");
+        ImageButton btn = findViewById(R.id.imageButton31);
+        btn.setImageResource(R.drawable.treebranch_selected);
     }
 
     public void useVulture(View view){
         testPassword_Part_4("vulture");
+        ImageButton btn = findViewById(R.id.imageButton32);
+        btn.setImageResource(R.drawable.vulture_selected);
     }
 }
