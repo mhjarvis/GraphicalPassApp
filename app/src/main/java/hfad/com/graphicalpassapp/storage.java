@@ -33,24 +33,20 @@ public class storage extends AppCompatActivity {
             testIt(test); //send value to output screen
             if(test.equals("Incorrect Password")){
                 //create timer to automatically move to the next activty
+
+
                 new CountDownTimer(5000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        // do nothing
                     }
                     @Override
                     public void onFinish() {
                         goBackToMain(); //go back to main
                     }
                 }.start();
-                //new activity
-                //SystemClock.sleep(2000); //wait 2 seconds
+
                 String sendThis = "The Password entered is incorrect...Redirecting...";
                 printResult(sendThis);
-
-                //finish();//return to starting page
-                //Intent goBackToMain = new Intent(this, MainActivity.class); //create intent
-                //startActivity(goBackToMain); //execute intent
             }
             if(test.equals("Passwords Match")){
                 testIt(test);
@@ -62,11 +58,11 @@ public class storage extends AppCompatActivity {
                     @Override
                     public void onTick(long millisUntilFinished) {
                         // do something after 1s
-                    }
+                                          }
 
                     @Override
                     public void onFinish() {
-                        // do something end times 5s
+
                         goForward();
                     }
 
@@ -217,14 +213,26 @@ public class storage extends AppCompatActivity {
         editor.putString(resetKey, ""); //assign blank to passed key value (resetKey)
         editor.apply(); //commit changes
     }
-public void goBackToMain(){
-    Intent goBackToMain = new Intent(this, MainActivity.class); //create intent
-    startActivity(goBackToMain); //execute intent
-}
-public void goForward(){
-    Intent goForward = new Intent(this, notes.class); //create intent
-    startActivity(goForward); //execute intent
-}
+
+    public void resetAll(){
+        resetVal("password_key_part_1");
+        resetVal("password_key_part_2");
+        resetVal("password_key_part_3");
+        resetVal("password_key_part_4");
+        resetVal("test_password_key_part_1");
+        resetVal("test_password_key_part_2");
+        resetVal("test_password_key_part_3");
+        resetVal("test_password_key_part_4");
+    }
+
+    public void goBackToMain(){
+        Intent goBackToMain = new Intent(this, MainActivity.class); //create intent
+        startActivity(goBackToMain); //execute intent
+    }
+    public void goForward(){
+        Intent goForward = new Intent(this, notes.class); //create intent
+        startActivity(goForward); //execute intent
+    }
 
 
 
