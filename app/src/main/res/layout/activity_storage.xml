@@ -14,6 +14,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="@+id/resultOfLoginText"
+        android:id="@+id/resultOfLoginText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@+id/doesitwork"
         android:id="@+id/doesitwork"/>
 
@@ -87,7 +96,7 @@
         android:layout_height="wrap_content"
         android:text="@+id/isCorrect"
         android:id="@+id/isCorrect"/>
-
+<!--
     <Button
         android:id="@+id/setupButton4"
         android:layout_width="150dp"
@@ -98,4 +107,5 @@
         android:onClick="getNotes"
         android:text="@string/setupButton3"
         android:textSize="18sp" />
+        -->
 </LinearLayout>

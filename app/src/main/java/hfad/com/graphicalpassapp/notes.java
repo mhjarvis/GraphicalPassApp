@@ -29,21 +29,24 @@ public class notes extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Save("Note.txt");
+                Save("notesPage.txt");
             }
         });
         
         myNotes = (EditText) findViewById(R.id.EditText1); //assign find value
-        myNotes.setText(Open("Note.txt")); //opens appropriate file when loaded
+        myNotes.setText(Open("notesPage.txt")); //opens appropriate file when loaded
     }
 
+    //Retrieve Notes Page for display after login
     public String Open(String fileName) {
         String content = "";
+        //if file exists attempt to open it
         if (FileExists(fileName)) {
             try {
                 InputStream in = openFileInput(fileName);
+                //if no file exists
                 if ( in != null) {
-                    InputStreamReader tmp = new InputStreamReader( in );
+                    InputStreamReader tmp = new InputStreamReader( in ); //create new
                     BufferedReader reader = new BufferedReader(tmp);
                     String str;
                     StringBuilder buf = new StringBuilder();
@@ -59,20 +62,20 @@ public class notes extends AppCompatActivity {
         return content;
     }
 
-    public boolean FileExists(String fname) {
-        File file = getBaseContext().getFileStreamPath(fname);
+    public boolean FileExists(String fileExist) {
+        File file = getBaseContext().getFileStreamPath(fileExist);
         return file.exists();
     }
-
+    //function to save current version of the page
     public void Save(String fileName) {
         try {
             OutputStreamWriter out =
                     new OutputStreamWriter(openFileOutput(fileName, 0));
             out.write(myNotes.getText().toString());
             out.close();
-            Toast.makeText(this, "Note saved!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "File Saved!", Toast.LENGTH_SHORT).show(); //flash that the file has been saved
         } catch (Throwable t) {
-            Toast.makeText(this, "Exception: " + t.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Error: " + t.toString(), Toast.LENGTH_LONG).show(); //in the event of error
         }
     }
 
